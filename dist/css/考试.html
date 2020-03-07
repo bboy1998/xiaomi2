@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+#head{
+    background:#223213 ;
+    height: 100px;
+    width: 800px;
+   overflow: hidden;
+}
+#head>span{
+    color: white;
+    float: left;
+    font-size:40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#into{
+    float: right;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
+}
+#content{
+    background: #e0e0e0;
+    width: 800px;
+    height: 600px;
+}
+.ingfather{
+    height: 80px;
+}
+.edfather{
+    height: 80px;
+}
+#ing {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+   
+}#ed{
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 30px;
+   
+}
+.ing {
+    float: right;
+    border-radius: 50%;
+    background: #ecf5ff;
+    font-size: 10px;
+   height: 20px;
+   width: 20px;
+   line-height: 20px;
+   text-align: center;
+   margin-right: 20px;
+   margin-top: 20px;
+   margin-top: 50px;
+}
+.ed{
+    float: right;
+    border-radius: 50%;
+    background: #ecf5ff;
+    font-size: 10px;
+    height: 20px;
+   width: 20px;
+   line-height: 20px;
+   text-align: center;
+   margin-right: 20px;
+   margin-top: 50px;
+  
+}
+.clear{
+    margin-top: 20px;
+    margin-left: 380px;
+    height: 10px;
+    width: 10px;
+    color: #696969;
+}
+
+</style>
+<body>
+
+    <div id="head">
+        <span>ToDolist</span>
+        <input type="text" value="" placeholder="请输入toto" id="into">
+       </div>
+           <div id="content">
+        <div class="ingfather" ><div id="ing">正在进行</div><div class="ing">0</div></div>
+        <div class="edfather"> <div id="ed">已经完成</div> <div class="ed" >0</div></div>
+       <div class="clear">
+           clear
+       </div>
+           </div>
+</body>
+<script>
+var into=document.getElementById("into");
+var ingcharacter=document.getElementsByClassName("ing");
+var edcharacter=document.getElementsByClassName("ed");
+var ingfather=document.getElementById("ingfather");
+var edfather=document.getElementById("edfather");
+into.onkeydown=function(e){
+    var e =window.event||e;
+      var keycode=e.keycode||e.which
+    if (keycode==13){
+        var intovalue=this.value;
+        this.value=""
+        if(intovalue!=""){
+
+        }
+    
+        
+    }
+
+}
+
+
+</script>
+</html>
